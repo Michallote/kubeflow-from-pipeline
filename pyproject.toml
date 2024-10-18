@@ -1,0 +1,17 @@
+[project]
+name = "kubeflow-from-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jinja2==3.1.4",
+    "kfp==2.9.0",
+]
+
+[project.scripts]
+kubeflow-from-pipeline = "kubeflow_from_pipeline:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
